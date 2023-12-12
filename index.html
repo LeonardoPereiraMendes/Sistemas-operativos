@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Estilize a barra preta */
+    .barra-preta {
+      background-color: black;
+      color: white;
+      padding: 10px; /* Adiciona algum espaço interno para o texto */
+      text-align: center; /* Centraliza o texto dentro da barra */
+    }
+
+
+/* Estilize o conteúdo da barra para garantir legibilidade */
+.conteudo {
+  text-align: left;
+  margin-left: 20px; /* Espaço à esquerda do conteúdo para separá-lo da imagem */
+}
+
+/* Remove margens e estilos padrão da lista */
+.conteudo ul {
+  list-style: none;
+  padding: 0;
+}
+
+.conteudo li {
+  margin-bottom: 10px; /* Espaço entre os itens da lista */
+}
+ /* Estilize o contêiner para os elementos de imagem e texto */
+ .container {
+      display: flex; /* Usa o layout flexível para alinhar os elementos lado a lado */
+      align-items: center; /* Alinha verticalmente os itens ao centro */
+    }
+
+    /* Estilize o texto para garantir legibilidade */
+    .texto {
+      margin-left: 20px; /* Adiciona espaço à esquerda do texto para separá-lo da imagem */
+    }
+  </style>
+  <title></title>
+</head>
+<body>
+
+  <!-- Barra preta com texto branco -->
+  <div class="barra-preta">
+    <h1>Sistemas operativos - tipologias</h1>
+  </div>
+<h1>Exigências do sistema operativo quanto às capacidades do equipamento</h1>
+<p><h3>Exigências do sistema operativo quanto às capacidades  do equipamento</h3></p>
+
+  <div class="container">
+    <img src="windows-removebg-preview.png" alt="Descrição da imagem" width="200">
+    <div class="texto">
+      <h2>Windows:</h2>
+      <p><li>Processador: Processador de 1 GHz ou mais rápido.</li>
+        <li>RAM: 1 GB para versões de 32 bits ou 2 GB para versões de 64 bits.</li>
+        <li>Espaço em Disco: Pelo menos 32 GB de espaço livre.</li>
+        <li>Placa Gráfica: Resolução de tela de 800 x 600 ou superior; placa gráfica DirectX 9 ou posterior.</li></p>
+    </div>
+  </div>
+  <br><br>
+  <div class="container">
+    <img src="macOS-removebg-preview.png" alt="Descrição da imagem" width="200">
+    <div class="texto">
+      <h2>macOS:</h2>
+      <p><li>Modelos de Mac suportados: MacBook (início de 2015 ou mais recente), MacBook Air (meados de 2012 ou mais recente), MacBook Pro (meados de 2012 ou mais recente), Mac mini <br> (final de 2012 ou mais recente), iMac (final de 2012 ou mais recente), iMac Pro (todos os modelos), Mac Pro (final de 2013 ou mais recente).</li>
+        <li>RAM: Pelo menos 4 GB de memória.</li>
+    <li>Espaço em Disco: Pelo menos 12,5 GB de espaço livre.</li></p>
+    </div>
+  </div>
+  <br><br>
+  <div class="container">
+    <img src="linux-removebg-preview.png" alt="Descrição da imagem" width="200">
+    <div class="texto">
+      <h2>Linux</h2>
+      <p><li>Processador: Processador de 2 GHz dual-core.</li>
+    <li>RAM: 4 GB de memória do sistema.
+    </li>
+<li>Espaço em Disco: 25 GB de espaço disponível no disco rígido.
+</li></p>
+    </div>
+  </div> 
+<br><br><br>
+<p><h1>Instalação do SO a partir de periféricos</h1></p>
+<p><h3>Instalação a partir de uma unidade flash USB:</h3></p>
+<li>Baixe a imagem ISO do sistema operacional desejado.</li>
+<li>Use uma ferramenta como Rufus (para Windows), dd (para Linux), ou Etcher (para macOS, Windows, e Linux) para criar um dispositivo inicializável USB a partir da imagem ISO.</li>
+<li>Conecte o USB ao computador que você deseja instalar o sistema operacional.</li>
+<li>Inicie o computador a partir do USB (certifique-se de que a ordem de inicialização no BIOS/UEFI está configurada corretamente).</li>
+<li>Siga as instruções na tela para instalar o sistema operacional.</li>
+<br><p><h3>Instalação a partir de um DVD:</h3></p>
+<li>Grave a imagem ISO em um DVD usando um software de gravação de discos.</li>
+<li>Insira o DVD no drive óptico do computador.</li>
+<li>Inicie o computador a partir do DVD.
+</li>
+<li>Prossiga com as instruções na tela para instalar o sistema operacional.
+</li>
+<br><p><h3>Instalação a partir de um disco rígido externo:</h3></p>
+<li>Armazene a imagem ISO em um disco rígido externo.</li>
+<li>Use um utilitário de inicialização USB ou configure o BIOS/UEFI para inicializar a partir do disco rígido externo.</li>
+<li>Siga as instruções na tela para iniciar o processo de instalação.</li>
+<br><p><h3>Instalação a partir de uma rede (PXE boot):</h3></p>
+<li>Configure um servidor PXE em sua rede.</li>
+<li>Conecte o computador à rede e configure o BIOS/UEFI para inicializar a partir da rede.</li>
+<li>O computador baixará o ambiente de instalação através da rede e iniciará o processo de instalação.</li>
+</body>
+</html>
